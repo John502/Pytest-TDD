@@ -1,0 +1,17 @@
+-v verbose
+
+-q not verbose (quietly)
+
+-s not capture the console output
+
+--ignore: path to ignore
+
+--maxfail: pytest should stop after a certain number of tests fails
+
+pytest -v -s -k "test2"
+
+pytest -v -s -k "test2 or test 3"
+
+@pytest.mark.test1
+
+pytest -v -s -m "test1 or test3"
